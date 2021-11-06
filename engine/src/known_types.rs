@@ -315,6 +315,12 @@ fn create_type_database() -> TypeDatabase {
         None,
     ));
     db.insert(TypeDetails::new(
+        "cxx::UniquePtr",
+        "rtc::scoped_refptr",
+        Behavior::CxxContainerByValueSafe,
+        None,
+    ));
+    db.insert(TypeDetails::new(
         "cxx::WeakPtr",
         "std::weak_ptr",
         Behavior::CxxContainerByValueSafe,
