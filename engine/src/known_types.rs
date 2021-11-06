@@ -315,7 +315,7 @@ fn create_type_database() -> TypeDatabase {
         None,
     ));
     db.insert(TypeDetails::new(
-        "cxx::UniquePtr",
+        "cxx::SharedPtr",
         "rtc::scoped_refptr",
         Behavior::CxxContainerByValueSafe,
         None,
